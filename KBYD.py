@@ -1,4 +1,4 @@
-# KBYD 1.0 - Simple Bulls and Cows Game
+# KBYD 1.0.1 - Simple Bulls and Cows Game
 import os
 import random
 import time
@@ -30,7 +30,7 @@ def maintitle():
     global gamemode
 
     clear()
-    print("KBYD 1.0 - Simple Bulls and Cows Game")
+    print("KBYD 1.0.1 - Simple Bulls and Cows Game")
     print("Please Select Game Mode\n")
     print("1. Baseball Rule - You can try 9 times.")
     print("2. Unlimited Rule - You can try until to guess right.")
@@ -59,7 +59,7 @@ def maintitle():
 # how to play
 def helptext():
     clear()
-    print("KBYD 1.0 - Simple Bulls and Cows Game")
+    print("KBYD 1.0.1 - Simple Bulls and Cows Game")
     print("How to Play\n")
     print("KBYD is a simple Bulls and Cows Game.\n")
     print("When the game starts, the computer randomly generates 3 to 5 digit-number.")
@@ -79,7 +79,7 @@ def helptext():
 # license
 def license():
     clear()
-    print("KBYD 1.0 - Simple Bulls and Cows Game")
+    print("KBYD 1.0.1 - Simple Bulls and Cows Game")
     print("License\n")
     print("KBYD is a simple Bulls and Cows Game.")
     print("Copyright (C) 2021.  Xeruel a.k.a. MochaSyrup\n")
@@ -96,7 +96,7 @@ def difficultyset():
     global difficulty
 
     clear()
-    print("KBYD 1.0 - Simple Bulls and Cows Game")
+    print("KBYD 1.0.1 - Simple Bulls and Cows Game")
     print("Please Select difficulty\n")
     print("1. Easy - 3-digit number")
     print("2. Normal - 4-digit number")
@@ -129,7 +129,7 @@ def timesset():
         gamestart()
     elif gamemode == "3":
         clear()
-        print("KBYD 1.0 - Simple Bulls and Cows Game")
+        print("KBYD 1.0.1 - Simple Bulls and Cows Game")
         print("Please Set your own guessing times.\n")
         print("If you don't select anything, It will start with Baseball Rule(9 times).")
 
@@ -170,11 +170,12 @@ def gameanswer():
     fakevalue = 0
 
     clear()
-    print("KBYD 1.0 - Simple Bulls and Cows Game")
+    print("KBYD 1.0.1 - Simple Bulls and Cows Game")
     print("Please input your answer.\n")
 
     if timessetting == 1:
         print("You have 1 chance left.")
+    elif timessetting == -1: pass
     else:
         print("You have", timessetting, "chances left.")
 
